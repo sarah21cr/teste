@@ -1160,3 +1160,41 @@ text-align: left;
 margin-left: 50px;
 }
 
+
+
+
+.blue-card {
+   transition: transform 0.3s ease;
+}
+
+.blue-card:hover {
+  transform: translateY(-15px);
+}
+
+
+.bgright {
+
+  transition: transform 0.3s ease;
+}
+
+.bgright:hover {
+  transform: translateX(10px);
+}
+
+
+.bgleft {
+
+  transition: transform 0.3s ease;
+}
+
+.bgleft:hover {
+  transform: translateX(-10px);
+}
+
+.bgup {
+  transition: transform 0.3s ease;
+}
+
+.bgup:hover {
+ transform: translateY(-15px);
+}
