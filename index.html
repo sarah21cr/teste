@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Teste Colina Tech</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-X4cL7m8OXQ9MmPb+j0JHv+V+ZjE6QFPyWyNV7WRLqtrjMqjel4RyG0KX7FO7WszivjEJjZ8uQ/IGlj1BQWz3eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css/vendor.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+
+
+
+  <div class="preloader-wrapper">
+    <div class="preloader">
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+    <div class="offcanvas-header mt-3">
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-4">
+          <span>Your Cart</span>
+          <span class="badge bg-primary rounded-circle pt-2 text-white">3</span>
+        </h4>
+
+        <ul class="list-group mb-4">
+          <li class="list-group-item d-flex justify-content-between align-items-center py-3 lh-sm">
+            <div>
+              <h6 class="my-0">Marketing Course</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$120</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center py-3 lh-sm">
+            <div>
+              <h6 class="my-0">Strategy Course</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$80</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center py-3 lh-sm">
+            <div>
+              <h6 class="my-0">Digital Course</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$50</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+            <span class="fw-bold">Total (USD)</span>
+            <strong>$250</strong>
+          </li>
+        </ul>
+
+        <div class="d-grid my-5">
+          <button class="btn btn-primary px-5 py-3" type="submit">Continue to checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch"
+    aria-labelledby="Search">
+    <div class="offcanvas-header mt-3">
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <div class="order-md-last">
+        <h4 class="text-primary text-uppercase mb-3">
+          Search
+        </h4>
+        <div class="search-bar border rounded-2 border-dark-subtle">
+          <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+            <input type="text" class="form-control border-0 bg-transparent" placeholder="Search Here" />
+            <iconify-icon icon="tabler:search" class="fs-4 me-3"></iconify-icon>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav class="main-menu d-flex navbar navbar-expand-lg p-2 py-3 p-lg-4 py-lg-4 ">
+    <div class="container-fluid">
+      <div class="main-logo d-lg-none">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" class="img-fluid">
+        </a>
+      </div>
+
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header mt-3">
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex justify-content-between">
+          <div class="main-logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" class="img-fluid">
+            </a>
+          </div>
+
+          <ul
+            class="navbar-nav menu-list list-unstyled d-flex justify-content-center align-items-center gap-md-3 mb-0 w-100">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link mx-2 active">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="index.html" class="nav-link mx-2">Sobre</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="courses"
+                data-bs-toggle="dropdown" aria-expanded="false">Para empresas e orgãos públicos</a>
+              <ul class="dropdown-menu" aria-labelledby="courses">
+                <li><a href="#" class="dropdown-item">Locação</a></li>
+                <li><a href="#" class="dropdown-item">Manutenção de frotas</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="events"
+                data-bs-toggle="dropdown" aria-expanded="false">Para você</a>
+              <ul class="dropdown-menu" aria-labelledby="courses">
+                <li><a href="#" class="dropdown-item">3A seminovos</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="index.html" class="nav-link mx-2">Calculadora</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link mx-2">Fale conosco</a>
+            </li>
+            <li class="nav-item"> <a href="#" class="btn btn-primary px-5 py-3 ">Entrar em contato</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <section id="hero" style="background-color: #F5F7FD; padding-top: 5%;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 pe-5 mt-5 mt-md-0">
+          <h1 class="textbanner">Foque em seu negócio enquanto a 3A locadora realiza sua gestão de frotas</h1>
+          <p class="mt-2 mb-5">Terceirize a gestão de frotas para empresas privadas e órgãos públicos.</p>
+          <a href="#" class="btn btn-primary px-5 py-3"><i class="me-2"><img src="./images/notification-message.png" alt=""></i> Quero uma proposta</a>
+        </div>
+        <div class="col-md-6 mt-3">
+          <img src="images/banner.png" alt="img" class="imgbanner">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="features" style="background: #F5F7FD !important; margin-top: -1px;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+          <div class="feature-item py-5">
+            <div class="feature-detail text-center">
+              <h2 class="feature-title" data-count="98.8" data-suffix="%">0%</h2>
+              <h6 class="feature-info text-uppercase">satisfação do cliente</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+          <div class="feature-item py-5">
+            <div class="feature-detail text-center">
+              <h2 class="feature-title" data-count="15000" data-prefix="+">0</h2>
+              <h6 class="feature-info text-uppercase">manutenção preventiva realizadas</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+          <div class="feature-item py-5">
+            <div class="feature-detail text-center">
+              <h2 class="feature-title" data-count="100" data-prefix="+">0</h2>
+              <h6 class="feature-info text-uppercase">empresas atendidas</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+          <div class="feature-item py-5">
+            <div class="feature-detail text-center">
+              <h2 class="feature-title" data-count="200" data-prefix="+">0</h2>
+              <h6 class="feature-info text-uppercase">veículos em frota ativa</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="padding-medium mt-xl-5">
+    <div class="container">
+      <div class="row align-items-center mt-xl-5">
+        <div class="col-md-12">
+          <div class="mb-3">
+            <p class="text-center text-uppercase" style="font-size: 22px; font-weight: 400; color: #FBC06A;">Confira as
+              principais vantagens</p>
+            <h2 class="display-6 fw-semibold text-center mb-5 mt-3">A 3A disponibiliza soluções <br> inteligentes para o seu
+              negócio</h2>
+            <div class="image-grid justify-content-center d-flex row">
+              <div class="image-card col-lg-4 col-md-4 col-sm-12">
+                <div class="image-container">
+                  <img src="./images/card1.png" style="height: 100%;" alt="Imagem" />
+                  <div class="overlay">
+
+                    <div class="additional-info">
+                      <div class="bgtitle">
+                        <h3>Gestão de frotas</h3>
+                      </div>
+
+                      <ul class="mt-3">
+                        <li>Investimento bem gerenciado</li>
+                        <li>Depreciação zero</li>
+                        <li>Condutores profissionais</li>
+                        <li>Frota na palma da mão - rastreamento 24h</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="image-card col-lg-4 col-md-4 col-sm-12">
+                <div class="image-container">
+                  <img src="./images/card2.png" style="height: 100%;" alt="Imagem" />
+                  <div class="overlay">
+
+                    <div class="additional-info">
+                      <div class="bgtitle">
+                        <h3>Locação de frotas</h3>
+                      </div>
+
+                      <ul class="mt-3">
+                        <li>Zero burocracia</li>
+                        <li>Veículos totalmentes regularizados e licenciados</li>
+                        <li>Sem custo de manutenção</li>
+                        <li>Veículos assegurados</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="image-card col-lg-4 col-md-4 col-sm-12">
+                <div class="image-container">
+                  <img src="./images/card3.png" style="height: 100%;" alt="Imagem" />
+                  <div class="overlay">
+
+                    <div class="additional-info">
+                      <div class="bgtitle">
+                        <h3>Manutenção de frotas</h3>
+                      </div>
+
+                      <ul class="mt-3">
+                        <li>Manutenção preventiva sem custo adicional</li>
+                        <li>Lavagem gratuita</li>
+                        <li>Oficina certificada na ISO 9001</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="points" class="padding-medium bgsection ">
+    <div class="container">
+
+      <div class="row  mt-5">
+        <div class="col-md-6 pe-md-5 order-lg-2">
+
+          <img src="./images/empresa.png" style="width: 100%;" alt="">
+
+        </div>
+        <div class="col-md-6 pe-md-5 order-lg-1 mt-5">
+          <div class="text-start">
+            <p class="text-start text-uppercase" style="font-size: 20px; font-weight: 400; color: #FBC06A;">veículos de
+              qualidade e procedência</p>
+            <h2 class="display-6 fw-semibold" style="color: #ffff;">Sobre a 3A Locadora</h2>
+          </div>
+          <p>A 3A Locadora atua no segmento de locação de veículos há mais de 20 anos, investindo em gestão de
+            processos e tecnologia para garantir agilidade e eficiência na terceirização de veículos para o segmento
+            corporativo.</p>
+          <div style="margin-top: 6%;">
+            <div class="d-flex p-3 borderdiv" style="border: 2px 0px 2px 0px;">
+              <img src="./images/icon.png" alt="" style="height: 36px; margin-right: 10px;">
+              <p class="mt-2">Frota diversificada</p>
+            </div>
+            <div class="d-flex p-3 borderdiv1" style="border: 2px 0px 2px 0px;">
+              <img src="./images/icon.png" alt="" style="height: 36px; margin-right: 10px;">
+              <p class="mt-2">Oficina própria</p>
+            </div>
+            <div class="d-flex p-3 borderdiv1" style="border: 2px 0px 2px 0px;">
+              <img src="./images/icon.png" alt="" style="height: 36px; margin-right: 10px;">
+              <p class="mt-2">Certificação ISO 9001 - Gestão da Qualidade</p>
+            </div>
+            <div class="d-flex p-3 borderdiv1" style="border: 2px 0px 2px 0px;">
+              <img src="./images/icon.png" alt="" style="height: 36px; margin-right: 10px;">
+              <p class="mt-2">Filiados à Associação Brasileira de Locadora de Automóveis - ABLA</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="points" class="padding-medium ">
+    <div class="container-fluid">
+
+      <div class="text-center">
+        <p class="text-center text-uppercase" style="font-size: 20px; font-weight: 400; color: #E7501D;">Diferentes
+          soluções para diferentes públicos</p>
+        <h2 class="display-6 fw-semibold mt-2">Quem atendemos?</h2>
+      </div>
+      <div class="row align-items-center mt-5" style="text-align: center !important;">
+        <div class="container col-md-4 pe-md-5">
+          <div class="card">
+            <div class="card-body">
+              <img src="./images/icon1.png" alt="Ícone 1" class="card-icon">
+              <div class="text-content">
+                <h5 style="color: #fff;">Empresas privadas</h5>
+                <p>Oferecemos locação de frotas personalizadas e venda de veículos para atender às necessidades de
+                  empresas privadas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="./images/icon2.png" alt="Ícone 2" class="card-icon">
+              <div class="text-content">
+                <h5 class="text-left" style="color: #fff;">Órgãos Públicos</h5>
+                <p>Temos soluções de locação de frota e venda de veículos para atender as necessidades de mobilidade de
+                  forma eficiente em todos os níveis de esferas do governo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="./images/icon3.png" alt="Ícone 3" class="card-icon">
+              <div class="text-content" style="color: #fff;">
+                <h5 style="color: #fff;">Pessoas Físicas</h5>
+                <p>Encontre o seu seminovo aqui. Temos as melhores condições para você sair de carro próprio!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="text-right" style="text-align: end !important;">
+            <img src="./images/carros.png" style="width: 100%;" alt="">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #F5F7FD;padding-top: 10%; padding-bottom: 10%;">
+    <div class="text-center" style="padding-bottom: 2%;">
+      <p class="text-center text-uppercase " style="font-size: 20px; font-weight: 400; color: #E7501D; ">Diferentes
+        soluções para diferentes públicos</p>
+      <h2 class="display-6 fw-semibold">Preparamos a frota ideal para o seu negócio</h2>
+    </div>
+    <div class="container mt-2">
+      <div class="row g-md-3">
+        <div class="col-md-4">
+          <div class="blue-card rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/Component1.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Produtividade</p>
+              <p class="category-paragraph m-0">Deixe a manutenção dos veículos conosco enquanto sua equipe se
+                concentra em seu negócio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blue-card rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/Component2.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Diferentes modelos de veículos</p>
+              <p class="category-paragraph m-0">Disponibilizamos diversos modelos, como SUV, Sedan e 4x4 para
+                atender às necessidades da sua empresa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blue-card rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/Component3.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Contratos personalizados</p>
+              <p class="category-paragraph m-0">Adaptamos os termos conforme às suas exigências, garantindo
+                flexibilidade e adequação ao seu negócio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blue-card rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/Component4.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Tecnologia</p>
+              <p class="category-paragraph m-0">Acompanhe sua frota em tempo real, através do sistema de rastreamento,
+                com autonomia e praticidade.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blue-card rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/componente5.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Atendimento</p>
+              <p class="category-paragraph m-0">Oferecemos suporte com especialistas em prontidão para atender às
+                demandas com rapidez e eficiência.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blue-card rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/componente6.svg" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Segurança</p>
+              <p class="category-paragraph m-0">O serviço manutenção garante que os veículos estejam sempre em perfeitas
+                condições de funcionamento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-primary px-5 py-3 mt-5" style="width: 300px !important;"> <i class="me-2"> <img src="./images/notification-message.png" alt=""></i> Contratar
+            frota</a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <section id="category" style="padding-top: 10%; padding-bottom: 10%;">
+    <div class="container">
+      <div class="text-center" style="padding-bottom: 2%;">
+        <p class="text-center text-uppercase" style="font-size: 20px; font-weight: 400; color: #E7501D;">Locação, Gestão
+          e Manutenção de Frotas</p>
+        <h2 class="display-6 fw-semibold">O que está incluso em nossos serviços?</h2>
+      </div>
+      <div class="text-center p-5">
+        <img class="text-center" style="width: 70%;" src="./images/car-lines 1.png" alt="">
+      </div>
+      <div class="d-flex flex-wrap justify-content-center g-md-3 mt-2">
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/1.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Manutenções preventivas e corretivas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/2.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Seguro veicular</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/3.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Rastreamento 24h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/4.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Suporte mecânico</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/5.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Controle de consumo de combustível</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/6.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Lavagem</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/7.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Disponibilidade de carro Reserva</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/8.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Gestão de consumo de combustível</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/9.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Condutor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div class="bgcard rounded-3 p-4 my-3">
+            <div class="d-flex align-items-center">
+              <i><img src="./images/10.png" alt=""></i>
+              <div class="ps-4">
+                <p class="category-paragraph fw-bold text-uppercase mb-1">Manutenção programada em oficina própria
+                  certificada na qualidade ISO 9001.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="testimonial" class="padding-medium bg-primary-subtle">
+    <div class="container">
+      <div class="text-center" style="padding-bottom: 2%;">
+        <p class="text-center text-uppercase" style="font-size: 20px; font-weight: 400; color: #E7501D;">+de 200
+          clientes confiam em nossas soluções</p>
+        <h2 class="display-6 fw-semibold mt-2">Veja o que falam sobre nós</h2>
+      </div>
+      <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide pe-md-5">
+                <div class="my-4">
+                  <div class="row mb-3">
+                    <div class="col-3"> <img src="images/reviwer1.jpg" alt="img" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-9">
+                      <h5 class="m-0 mt-2">Bruno Lacet</h5>
+                      <p class="text-muted">Cliente Satisfeito</p>
+                    </div>
+
+                  </div>
+                  <p class="text-muted">“Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                    ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                    nunc sapien egestas at cursus. ”</p>
+
+                </div>
+              </div>
+              <div class="swiper-slide pe-md-5">
+                <div class="my-4">
+                  <div class="row mb-3">
+                    <div class="col-3"> <img src="images/reviwer2.jpg" alt="img" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-9">
+                      <h5 class="m-0 mt-2">Luiza Fochesato</h5>
+                      <p class="text-muted">Cliente Satisfeita</p>
+                    </div>
+
+                  </div>
+                  <p class="text-muted">“Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                    ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                    nunc sapien egestas at cursus. ”</p>
+
+                </div>
+              </div>
+              <div class="swiper-slide pe-md-5">
+                <div class="my-4">
+                  <div class="row mb-3">
+                    <div class="col-3"> <img src="images/reviwer3.jpg" alt="img" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-9">
+                      <h5 class="m-0 mt-2">Lucas Santos</h5>
+                      <p class="text-muted">Cliente Satisfeito</p>
+                    </div>
+
+                  </div>
+                  <p class="text-muted">“Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                    ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                    nunc sapien egestas at cursus. ”</p>
+
+                </div>
+              </div>
+              <div class="swiper-slide pe-md-5">
+                <div class="my-4">
+                  <div class="row mb-3">
+                    <div class="col-3"> <img src="images/reviwer3.jpg" alt="img" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-9">
+                      <h5 class="m-0 mt-2">Lucas Santos</h5>
+                      <p class="text-muted">Cliente Satisfeito</p>
+                    </div>
+
+                  </div>
+                  <p class="text-muted">“Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                    ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                    nunc sapien egestas at cursus. ”</p>
+
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="teacher" class="padding-medium">
+    <div class="container">
+      <div class="text-center mb-5" style="position: relative;">
+        <img src="./images/banner2.png" style="width: 100%;" alt="">
+        <div class="overlay-text">
+          <h2 style="color: #fff;"> Faça sua simulação e conheça <br> condições da locação <br> de frotas personalizadas
+          </h2>
+          <a href="#" class="btn btn-primary1 px-5 py-3 mt-3 "><i class="me-2"> <img src="./images/Iconsimula.svg" alt=""></i> Fazer simulação</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="row ">
+        <div class="col-md-12 col-lg-6 wow fadeIn d-flex justify-content-end "
+          style="padding-left: 0 !important; padding-right: 0 !important;" data-wow-delay="0.1s">
+          <img src="./images/contact.png" style="height: 90%; margin-top: 5%;" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 d-flex justify-content-start"
+          style="padding-left: 0 !important; padding-right: 0 !important;">
+          <form action="forms/contact.php" id="contact" method="post" role="form" class="php-email-form">
+            <p style="color: #7C9EE8; text-transform: uppercase;">Fale conosco</p>
+            <h2 class="mt-2" style="color: #000000;">Está pronto para acelerar a produtividade do seu negócio com a
+              3A Locadora?</h2>
+            <div class="row">
+              <div class="form-group col-md-12 mt-2">
+
+                <div class="d-flex">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipo_cliente" id="empresa" value="empresa"
+                      required>
+                    <label class="form-check-label" for="empresa">Empresa</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipo_cliente" id="orgao" value="orgao">
+                    <label class="form-check-label" for="orgao">Órgão público</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipo_cliente" id="pessoa" value="pessoa">
+                    <label class="form-check-label" for="pessoa">Pessoa física</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <input placeholder="Nome" type="text" name="name" class="form-control" id="name" required />
+              </div>
+              <div class="form-group col-md-6">
+                <input placeholder="Whatsapp" type="text" class="form-control" name="Whatsapp" id="Whatsapp" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-12">
+                <input placeholder="Email" type="email" name="email" class="form-control" id="email" required />
+              </div>
+              <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+              <div class="form-group col-md-12">
+                <div class="select-wrapper">
+                  <select class="form-control" name="service" id="service" required>
+                    <option value="" disabled selected>Serviço Desejado</option>
+                    <option value="service1">Serviço 1</option>
+                    <option value="service2">Serviço 2</option>
+                  </select>
+                  <i class="fas fa-chevron-down select-icon"></i>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+              <div class="form-group col-md-6">
+                <div class="select-wrapper">
+                  <select class="form-control" name="service" id="service" required>
+                    <option value="" disabled selected>Frota escolhida</option>
+                    <option value="service1">Frota 1</option>
+                    <option value="service2">Frota 2</option>
+                  </select>
+                  <i class="fas fa-chevron-down select-icon"></i>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <input placeholder="Quantidade de carros" type="text" name="Qtd" class="form-control" id="Qtd"
+                  required />
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-start">
+              <button id="buttonSend" type="submit" class="main-button button-carrousel">
+                <span style="display: none" id="circle">
+                  <svg viewBox="25 25 50 50">
+                    <circle r="20" cy="50" cx="50"></circle>
+                  </svg>
+                </span>
+                <span id="text-form"> Enviar informações </span>
+              </button>
+
+            </div>
+            <p class="mt-4">Ao enviar seus dados, você declara estar ciente da Política de Privacidade</p>
+            <hr>
+            <i><img style="margin-right: 5px;" src="./images/form.png" alt="">Seus dados estão seguros</i>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="padding-medium bgsection1 ">
+    <div class="container-fluid">
+
+      <div class="row  mt-5">
+        <div class="col-md-6 pe-md-5 order-lg-1" style="padding-left: 0 !important;">
+
+          <div class="text-right" style="text-align: start !important;">
+            <img src="./images/venda.png" style="width: 80%;" alt="">
+          </div>
+
+        </div>
+
+
+
+        <div class="col-md-6 pe-md-5 order-lg-2" style="margin-top: 5%;">
+          <div class="text-start">
+
+            <h2 class="display-6 fw-semibold" style="color: #ffff;">Venda de veículos <br> para pessoas físicas <br> e
+              empresas
+            </h2>
+          </div>
+          <p style="margin-top: 5%; width: 80%;">Trabalhamos com a venda de seminovos revisados, de boa procedência, com
+            garantia e os melhores preços da
+            região para você comprar seu carro próprio ou aumentar sua frota.</p>
+          <div class="text-start">
+            <a href="#" class="btn btn-primary px-5 py-3 mt-5" style="width: 300px !important;"><i><img
+                  style="margin-right: 5%;" src="./images/car-01.png" alt=""></i>Ver veículos</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #2D2C68;padding-top: 5%; padding-bottom: 10%;">
+    <div class="text-center" style="padding-bottom: 2%;">
+
+      <h2 class="display-6 fw-semibold" style="color: #ffffff;">Por que comprar seu seminovo na 3A Locadora?</h2>
+    </div>
+    <div class="container mt-2" style="color: #ffffff;">
+      <div class="row g-md-3">
+        <div class="col-md-3">
+          <div class=" rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/order1.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Único
+                dono</p>
+              <p class="category-paragraph mt-3">Oferecemos a segurança e confiabilidade de um seminovo de único dono.
+                Seja você o próximo dono!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class=" rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/order2.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Manutenção
+                própria</p>
+              <p class="category-paragraph mt-3">Disponibilizamos oficinas e profissionais qualificados para garantir a
+                execução completa do plano de manutenção veicular.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class=" rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/order3.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Histórico digital
+                de manutenção</p>
+              <p class="category-paragraph mt-3">Disponibilizamos relatório com todo o histórico de serviços realizados e peças substituídas desde os primeiros quilômetros.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class=" rounded-3 p-4 my-3 text-center">
+            <div>
+              <img src="./images/order4.png" alt="" class="img-spacing">
+              <p class="category-paragraph fw-bold text-uppercase mb-1">Preço
+                competitivo</p>
+              <p class="category-paragraph mt-3">Encontre o carro ideal para suas necessidades com os melhores preços e custo-benefício do mercado.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+     
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="padding-medium bgsection2 ">
+    <div class="container">
+
+      <div class="row  mt-5">
+        <div class="col-md-6 pe-md-5 order-lg-2" style="padding-left: 0 !important;">
+
+          <div class="text-right" style="text-align: start !important;">
+            <img src="./images/woman.png" style="width: 100%;" alt="">
+          </div>
+
+        </div>
+
+
+
+        <div class="col-md-6 pe-md-5 order-lg-1" style="margin-top: 5%;">
+          <div class="text-start">
+
+            <h2 class="display-6 fw-semibold" style="color: #ffff;">Está pronto para <br> escolher  <span style="color:#F09005;">seu próximo veículo seminovo?</span> 
+            </h2>
+          </div>
+          <p style="margin-top: 5%; width: 80%;">Confira os modelos disponíveis em nosso estoque e faça a sua escolha.</p>
+          <div class="text-start">
+            <a href="#" class="btn btn-primary px-5 py-3 mt-5" style="width: 300px !important;"><i><img
+                  style="margin-right: 5%;" src="./images/car-01.png" alt=""></i>Ver estoque</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+ 
+
+ 
+
+  <footer id="footer" style="background-color: #2D2C68;">
+    <div class="container " style="padding: 5%;">
+      <div class="row">
+        <div class="col-sm-6 col-lg-7 my-3">
+          <div class="footer-menu">
+            <ul class="menu-list list-unstyled d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start text-white">
+              <li class="menu-item">
+                <a href="#" class="footer-link d-block mb-3">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link d-block mb-3">Sobre</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link d-block mb-3">Serviços</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link d-block mb-3">Calculadora</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="footer-link d-block mb-3">Fale conosco</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-5 d-flex justify-content-end justify-content-center-sm">
+          <div class="footer-menu text-end text-center-sm">
+            <div class="social-links mt-4">
+              <ul class="d-flex list-unstyled">
+                <li style="color: #ffff;" class="me-5"><i class="bi bi-instagram me-2"></i> Instagram</li>
+                <li style="color: #ffff;"> <i class="bi bi-facebook me-2"></i> Facebook</li>
+              </ul>
+              <p style="color: #fff;">Rua José Aguinaldo de <br> Barros nº 540 - Candelária</p>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-4" style="color: #F5F7FD;">
+        <div class="col-lg-12">
+          <div class="row py-3 text-center text-md-start" style="color: #ffff;">
+            <div class="col-lg-4"> <img src="./images/Component 1.png" style="width: 50px;" alt=""></div>
+            
+            <div class="col-md-4 text-center ">
+              <p>© 2024 3A Locadora | todos os direitos reservados</p>
+            </div>
+            <div class="col-md-4 text-lg-end text-md-start">
+              <p>Desenvolvido por Colina tech</p>
+            </div>
+          </div>
+        </div>
+        
+        
+    
+        
+        
+      
+      </div>
+    </div>
+  </footer>
+  
+  
+
+
+  <script>
+    $(document).ready(function () {
+      $('.feature-title').each(function () {
+        var $this = $(this);
+        var countTo = $this.data('count');
+        var prefix = $this.data('prefix') || '';
+        var suffix = $this.data('suffix') || '';
+        $({ Counter: 0 }).animate({ Counter: countTo }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function () {
+            $this.text(prefix + Math.ceil(this.Counter).toLocaleString() + suffix);
+          }
+        });
+      });
+    });
+  </script>
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
